@@ -1,38 +1,38 @@
-.App {
+ /* Scher is 1280 bij 800   */
+ html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.Container{
+  background-image: url('./images/rect3717.png');
+  padding-left: 52.75%;
+  padding-right: 6.48%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat  : no-repeat;
+  background-position: center;
+}
+
+.Button {
+  padding-top: 5%;
+  padding: 10;
   text-align: center;
-}
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.Buttons {
+  padding-top: 65%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* .ButtonRow {
+  padding-top: 60%;
+} */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MachineStatusTekst {
+  display: block;
+  padding-top: 12%;
+  text-align: center;
 }

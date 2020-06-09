@@ -1,0 +1,33 @@
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
+
+import MachineErrorText from '../Components/MachineErrorText'
+
+afterEach(cleanup);
+
+const defaultProps = {
+    machineError: true,
+    errorMessageDescription: 'Code 3 Machine is kapot.'
+  }
+
+it("Render MachineErrorText with message", ()=> {
+    const {findByText } = render(
+    <MachineErrorText 
+    machineError={defaultProps.machineError}  
+    errorMessageDescription= {defaultProps.errorMessageDescription}
+    /> 
+    );
+    expect(findByText("Code 3 Machine is kapot.")).toBeTruthy();
+})
+
+ PASS  src/test/MachineErrorText.test.js (9.563s)
+ PASS  src/test/CoffeeButtons.test.js (7.534s)
+ PASS  src/test/App.test.js (18.548s)
+ PASS  src/test/CoffeeSlider.test.js
+ PASS  src/test/MachineStatusText.test.js
+
+Test Suites: 5 passed, 5 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        23.497s
+Ran all test suites related to changed files.
