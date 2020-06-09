@@ -145,6 +145,7 @@ class App extends Component {
                     }
                     if (!this.state.checkSugarAndMilkValue) {
                       if (coffee.name === 'Cappucino') {
+                        console.log(this.state.checkSugarAndMilkValue)
                         coffee.buttonDisabled =true
                       }
                     }
@@ -226,7 +227,6 @@ class App extends Component {
             coffeeItems: updatedCoffee,
             sliderSugarDisabled: true,
             sliderMilkDisabled: true,
-            checkSugarAndMilkValue:  false,
         }
     })
   }
